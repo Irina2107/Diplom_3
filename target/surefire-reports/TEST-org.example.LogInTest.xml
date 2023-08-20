@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.LogInTest" time="45.928" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\IGladkova\Diplom\Diplom_3\target\test-classes;C:\Users\IGladkova\Diplom\Diplom_3\target\classes;C:\Users\IGladkova\.m2\repository\org\apache\cassandra\cassandra-all\4.0.8\cassandra-all-4.0.8.jar;C:\Users\IGladkova\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar;C:\Users\IGladkova\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\IGladkova\.m2\repository\com\google\guava\guava\27.0-jre\guava-27.0-jre.jar;C:\Users\IGladkova\.m2\repository\commons-cli\commons-cli\1.1\commons-cli-1.1.jar;C:\Users\IGladkova\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\IGladkova\.m2\repository\org\antlr\ST4\4.0.8\ST4-4.0.8.jar;C:\Users\IGladkova\.m2\repository\org\antlr\antlr-runtime\3.5.2\antlr-runtime-3.5.2.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\IGladkova\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\IGladkova\.m2\repository\com\boundary\high-scale-lib\1.0.6\high-scale-lib-1.0.6.jar;C:\Users\IGladkova\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\IGladkova\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\IGladkova\.m2\repository\io\airlift\airline\0.8\airline-0.8.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-core\3.1.5\metrics-core-3.1.5.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-jvm\3.1.5\metrics-jvm-3.1.5.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-logback\3.1.5\metrics-logback-3.1.5.jar;C:\Users\IGladkova\.m2\repository\com\addthis\metrics\reporter-config3\3.0.3\reporter-config3-3.0.3.jar;C:\Users\IGladkova\.m2\repository\com\addthis\metrics\reporter-config-base\3.0.3\reporter-config-base-3.0.3.jar;C:\Users\IGladkova\.m2\repository\com\clearspring\analytics\stream\2.5.2\stream-2.5.2.jar;C:\Users\IGladkova\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\IGladkova\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\IGladkova\.m2\repository\net\java\dev\jna\jna\5.6.0\jna-5.6.0.jar;C:\Users\IGladkova\.m2\repository\com\github\jbellis\jamm\0.3.2\jamm-0.3.2.jar;C:\Users\IGladkova\.m2\repository\io\netty\netty-all\4.1.58.Final\netty-all-4.1.58.Final.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-queue\5.20.123\chronicle-queue-5.20.123.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-core\2.20.126\chronicle-core-2.20.126.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-bytes\2.20.111\chronicle-bytes-2.20.111.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-wire\2.20.117\chronicle-wire-2.20.117.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-threads\2.20.111\chronicle-threads-2.20.111.jar;C:\Users\IGladkova\.m2\repository\org\fusesource\sigar\1.6.4\sigar-1.6.4.jar;C:\Users\IGladkova\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.6.1\ecj-4.6.1.jar;C:\Users\IGladkova\.m2\repository\org\caffinitas\ohc\ohc-core\0.5.1\ohc-core-0.5.1.jar;C:\Users\IGladkova\.m2\repository\org\caffinitas\ohc\ohc-core-j8\0.5.1\ohc-core-j8-0.5.1.jar;C:\Users\IGladkova\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.5.6\caffeine-2.5.6.jar;C:\Users\IGladkova\.m2\repository\org\jctools\jctools-core\3.1.0\jctools-core-3.1.0.jar;C:\Users\IGladkova\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\IGladkova\.m2\repository\com\carrotsearch\hppc\0.8.1\hppc-0.8.1.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-cli\0.14\sjk-cli-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-core\0.14\sjk-core-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-stacktrace\0.14\sjk-stacktrace-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\mxdump\0.14\mxdump-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\lab\jvm-attach-api\1.5\jvm-attach-api-1.5.jar;C:\Users\IGladkova\.m2\repository\com\beust\jcommander\1.30\jcommander-1.30.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-json\0.14\sjk-json-0.14.jar;C:\Users\IGladkova\.m2\repository\com\github\luben\zstd-jni\1.5.0-4\zstd-jni-1.5.0-4.jar;C:\Users\IGladkova\.m2\repository\org\psjava\psjava\0.1.19\psjava-0.1.19.jar;C:\Users\IGladkova\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.36.Final\netty-tcnative-boringssl-static-2.0.36.Final.jar;C:\Users\IGladkova\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\IGladkova\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\IGladkova\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.9\HdrHistogram-2.1.9.jar;C:\Users\IGladkova\.m2\repository\de\jflex\jflex\1.8.2\jflex-1.8.2.jar;C:\Users\IGladkova\.m2\repository\com\github\vbmacher\java-cup-runtime\11b-20160615\java-cup-runtime-11b-20160615.jar;C:\Users\IGladkova\.m2\repository\com\github\rholder\snowball-stemmer\1.3.0.581.1\snowball-stemmer-1.3.0.581.1.jar;C:\Users\IGladkova\.m2\repository\com\googlecode\concurrent-trees\concurrent-trees\2.4.0\concurrent-trees-2.4.0.jar;C:\Users\IGladkova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\IGladkova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\IGladkova\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\IGladkova\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\IGladkova\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-http-jdk-client\4.9.1\selenium-http-jdk-client-4.9.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.1\selenium-http-4.9.1.jar;C:\Users\IGladkova\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.1\selenium-json-4.9.1.jar;C:\Users\IGladkova\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\IGladkova\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\IGladkova\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\IGladkova\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\IGladkova\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\IGladkova\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\IGladkova\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\IGladkova\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\IGladkova\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-junit4\2.23.0\allure-junit4-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-java-commons\2.23.0\allure-java-commons-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-model\2.23.0\allure-model-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-rest-assured\2.23.0\allure-rest-assured-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-attachments\2.23.0\allure-attachments-2.23.0.jar;C:\Users\IGladkova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\IGladkova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\IGladkova\.m2\repository\org\jetbrains\annotations\20.1.0\annotations-20.1.0.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\IGladkova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\IGladkova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\IGladkova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="user.country.format" value="RU"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin"/>
+    <property name="sun.java.command" value="C:\Users\IGladkova\AppData\Local\Temp\surefire9713898601770781345\surefirebooter-20230820160941416_3.jar C:\Users\IGladkova\AppData\Local\Temp\surefire9713898601770781345 2023-08-20T16-09-40_966-jvmRun1 surefire-20230820160941416_1tmp surefire_0-20230820160941416_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\IGladkova\Diplom\Diplom_3\target\test-classes;C:\Users\IGladkova\Diplom\Diplom_3\target\classes;C:\Users\IGladkova\.m2\repository\org\apache\cassandra\cassandra-all\4.0.8\cassandra-all-4.0.8.jar;C:\Users\IGladkova\.m2\repository\org\xerial\snappy\snappy-java\1.1.2.6\snappy-java-1.1.2.6.jar;C:\Users\IGladkova\.m2\repository\org\lz4\lz4-java\1.8.0\lz4-java-1.8.0.jar;C:\Users\IGladkova\.m2\repository\com\google\guava\guava\27.0-jre\guava-27.0-jre.jar;C:\Users\IGladkova\.m2\repository\commons-cli\commons-cli\1.1\commons-cli-1.1.jar;C:\Users\IGladkova\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\IGladkova\.m2\repository\org\antlr\ST4\4.0.8\ST4-4.0.8.jar;C:\Users\IGladkova\.m2\repository\org\antlr\antlr-runtime\3.5.2\antlr-runtime-3.5.2.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.25\log4j-over-slf4j-1.7.25.jar;C:\Users\IGladkova\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\IGladkova\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\IGladkova\.m2\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar;C:\Users\IGladkova\.m2\repository\com\boundary\high-scale-lib\1.0.6\high-scale-lib-1.0.6.jar;C:\Users\IGladkova\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\IGladkova\.m2\repository\org\mindrot\jbcrypt\0.4\jbcrypt-0.4.jar;C:\Users\IGladkova\.m2\repository\io\airlift\airline\0.8\airline-0.8.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-core\3.1.5\metrics-core-3.1.5.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-jvm\3.1.5\metrics-jvm-3.1.5.jar;C:\Users\IGladkova\.m2\repository\io\dropwizard\metrics\metrics-logback\3.1.5\metrics-logback-3.1.5.jar;C:\Users\IGladkova\.m2\repository\com\addthis\metrics\reporter-config3\3.0.3\reporter-config3-3.0.3.jar;C:\Users\IGladkova\.m2\repository\com\addthis\metrics\reporter-config-base\3.0.3\reporter-config-base-3.0.3.jar;C:\Users\IGladkova\.m2\repository\com\clearspring\analytics\stream\2.5.2\stream-2.5.2.jar;C:\Users\IGladkova\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\IGladkova\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\IGladkova\.m2\repository\net\java\dev\jna\jna\5.6.0\jna-5.6.0.jar;C:\Users\IGladkova\.m2\repository\com\github\jbellis\jamm\0.3.2\jamm-0.3.2.jar;C:\Users\IGladkova\.m2\repository\io\netty\netty-all\4.1.58.Final\netty-all-4.1.58.Final.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-queue\5.20.123\chronicle-queue-5.20.123.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-core\2.20.126\chronicle-core-2.20.126.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-bytes\2.20.111\chronicle-bytes-2.20.111.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-wire\2.20.117\chronicle-wire-2.20.117.jar;C:\Users\IGladkova\.m2\repository\net\openhft\chronicle-threads\2.20.111\chronicle-threads-2.20.111.jar;C:\Users\IGladkova\.m2\repository\org\fusesource\sigar\1.6.4\sigar-1.6.4.jar;C:\Users\IGladkova\.m2\repository\org\eclipse\jdt\core\compiler\ecj\4.6.1\ecj-4.6.1.jar;C:\Users\IGladkova\.m2\repository\org\caffinitas\ohc\ohc-core\0.5.1\ohc-core-0.5.1.jar;C:\Users\IGladkova\.m2\repository\org\caffinitas\ohc\ohc-core-j8\0.5.1\ohc-core-j8-0.5.1.jar;C:\Users\IGladkova\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.5.6\caffeine-2.5.6.jar;C:\Users\IGladkova\.m2\repository\org\jctools\jctools-core\3.1.0\jctools-core-3.1.0.jar;C:\Users\IGladkova\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;C:\Users\IGladkova\.m2\repository\com\carrotsearch\hppc\0.8.1\hppc-0.8.1.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-cli\0.14\sjk-cli-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-core\0.14\sjk-core-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-stacktrace\0.14\sjk-stacktrace-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\mxdump\0.14\mxdump-0.14.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\lab\jvm-attach-api\1.5\jvm-attach-api-1.5.jar;C:\Users\IGladkova\.m2\repository\com\beust\jcommander\1.30\jcommander-1.30.jar;C:\Users\IGladkova\.m2\repository\org\gridkit\jvmtool\sjk-json\0.14\sjk-json-0.14.jar;C:\Users\IGladkova\.m2\repository\com\github\luben\zstd-jni\1.5.0-4\zstd-jni-1.5.0-4.jar;C:\Users\IGladkova\.m2\repository\org\psjava\psjava\0.1.19\psjava-0.1.19.jar;C:\Users\IGladkova\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.36.Final\netty-tcnative-boringssl-static-2.0.36.Final.jar;C:\Users\IGladkova\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\IGladkova\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\IGladkova\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.9\HdrHistogram-2.1.9.jar;C:\Users\IGladkova\.m2\repository\de\jflex\jflex\1.8.2\jflex-1.8.2.jar;C:\Users\IGladkova\.m2\repository\com\github\vbmacher\java-cup-runtime\11b-20160615\java-cup-runtime-11b-20160615.jar;C:\Users\IGladkova\.m2\repository\com\github\rholder\snowball-stemmer\1.3.0.581.1\snowball-stemmer-1.3.0.581.1.jar;C:\Users\IGladkova\.m2\repository\com\googlecode\concurrent-trees\concurrent-trees\2.4.0\concurrent-trees-2.4.0.jar;C:\Users\IGladkova\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\IGladkova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\IGladkova\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\IGladkova\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\IGladkova\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-http-jdk-client\4.9.1\selenium-http-jdk-client-4.9.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\IGladkova\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-http\4.9.1\selenium-http-4.9.1.jar;C:\Users\IGladkova\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\IGladkova\.m2\repository\org\seleniumhq\selenium\selenium-json\4.9.1\selenium-json-4.9.1.jar;C:\Users\IGladkova\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.2\webdrivermanager-5.3.2.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java\3.2.14\docker-java-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-core\3.2.14\docker-java-core-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-api\3.2.14\docker-java-api-3.2.14.jar;C:\Users\IGladkova\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\IGladkova\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\IGladkova\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.14\docker-java-transport-httpclient5-3.2.14.jar;C:\Users\IGladkova\.m2\repository\com\github\docker-java\docker-java-transport\3.2.14\docker-java-transport-3.2.14.jar;C:\Users\IGladkova\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\IGladkova\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\IGladkova\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\IGladkova\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\IGladkova\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-junit4\2.23.0\allure-junit4-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-java-commons\2.23.0\allure-java-commons-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-model\2.23.0\allure-model-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-rest-assured\2.23.0\allure-rest-assured-2.23.0.jar;C:\Users\IGladkova\.m2\repository\io\qameta\allure\allure-attachments\2.23.0\allure-attachments-2.23.0.jar;C:\Users\IGladkova\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\IGladkova\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\IGladkova\.m2\repository\org\jetbrains\annotations\20.1.0\annotations-20.1.0.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\IGladkova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\IGladkova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\IGladkova\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\IGladkova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\IGladkova\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\IGladkova\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="C:\Users\IGladkova\Diplom\Diplom_3\target/allure-results"/>
+    <property name="user.home" value="C:\Users\IGladkova"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\IGladkova\Diplom\Diplom_3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\IGladkova\AppData\Local\Temp\surefire9713898601770781345\surefirebooter-20230820160941416_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.18+10-LTS"/>
+    <property name="user.name" value="IGladkova"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.18.10.1"/>
+    <property name="localRepository" value="C:\Users\IGladkova\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\IGLADK~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="user.dir" value="C:\Users\IGladkova\Diplom\Diplom_3"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="ru"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Amazon Corretto\jdk11.0.18_10\bin;C:\Program Files\BellSoft\LibericaJDK-17-Lite\bin\;C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files (x86)\dotnet\;C:\apache-maven-3.9.1-bin\bin;C:\Users\IGladkova\AppData\Local\Microsoft\WindowsApps;C:\Users\IGladkova\AppData\Local\Programs\Fiddler;C:\allure-commandline-2.23.0\allure-2.23.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.18+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="LogInButtonOnMainPage" classname="org.example.LogInTest" time="15.766">
+    <system-out><![CDATA[16:10:11.542 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:12.380 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:12.965 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:12.969 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:12.969 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:10:12.971 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:12.972 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:12.972 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/auth/register HTTP/1.1
+16:10:12.972 [main] DEBUG org.apache.http.wire -  >> "POST /api/auth/register HTTP/1.1[\r][\n]"
+16:10:12.974 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 74[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> POST /api/auth/register HTTP/1.1
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Content-Length: 74
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:12.975 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:12.975 [main] DEBUG org.apache.http.wire -  >> "{"email":"lauran.stanton@gmail.com","password":"123456!","name":"Ed Ible"}"
+16:10:13.183 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:10:13.189 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:09:45 GMT[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMDk5OWVkMjgwMDAxYjM1NjgzMSIsImlhdCI6MTY5MjUzNjk4NSwiZXhwIjoxNjkyNTM4MTg1fQ.zsQ6bDnV-21v8PAGcmvLIP5miw9Ftdb_wg-VeChE-Lw[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "ETag: W/"172-T7wxQY+ZSKod2zd+C8ZQjNwZSPg"[\r][\n]"
+16:10:13.190 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nepfryQXWUG1p8%2BvKkZ2KpljI84PREjFT0VAWij8%2BWPEDX1b7Lf3djyp5QNKPUqTSVCWiAnMIja%2BnksyN2Gyc2me3Km07IA4H4hsGQ3g3KgKizJZf3V4UjWEX4aG2gLFSp6EJdKICBxmAcBslKgss9R%2Bxkw%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adf5e0cbc36dd-FRA[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:13.191 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:13.193 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:10:13.193 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:10:13.193 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:09:45 GMT
+16:10:13.193 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:13.193 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:10:13.194 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:13.194 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:13.194 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:13.194 [main] DEBUG org.apache.http.headers - << authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMDk5OWVkMjgwMDAxYjM1NjgzMSIsImlhdCI6MTY5MjUzNjk4NSwiZXhwIjoxNjkyNTM4MTg1fQ.zsQ6bDnV-21v8PAGcmvLIP5miw9Ftdb_wg-VeChE-Lw
+16:10:13.194 [main] DEBUG org.apache.http.headers - << ETag: W/"172-T7wxQY+ZSKod2zd+C8ZQjNwZSPg"
+16:10:13.194 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:13.194 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nepfryQXWUG1p8%2BvKkZ2KpljI84PREjFT0VAWij8%2BWPEDX1b7Lf3djyp5QNKPUqTSVCWiAnMIja%2BnksyN2Gyc2me3Km07IA4H4hsGQ3g3KgKizJZf3V4UjWEX4aG2gLFSp6EJdKICBxmAcBslKgss9R%2Bxkw%3D"}],"group":"cf-nel","max_age":604800}
+16:10:13.194 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:13.194 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:13.194 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adf5e0cbc36dd-FRA
+16:10:13.194 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+16:10:13.194 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:13.217 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:13.233 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:13.237 [main] DEBUG org.apache.http.wire -  << "14b[\r][\n]"
+16:10:13.237 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]4[0xcf][0xc9]n[0xc2]0[0x14]@[0xd1]_Ao[\r][0xc8][0x86][0xd8]$Y[0x95][0x2]EF8[0x94][0x12]R`S9[0xce][0xcb]H[0x2][0x8a][0x81]0[0x88][0xaf][0xa8][0xd4][0xed]Y\[0xe9]>[0xc0][0x9c][0xb5]Fc[0xc0]=[0xd5]gl[0xc3][0xd9]`[\r][0xee][0x3][0xb0]T[0xd9][0x1e]\[0xd8][0xab]s[0xad][0xaa][0xae]9[0xa9][0xea]t[0xa8][0xde][0x92][0x17]w[0xf5][0xa1][0x84]6T[0xaa]Dpa[0x12][0xb5]D[0xb8]Gx[0xb6]A[0xfd][0xa5][0xfc]C[0x81][0x15][0xb8][0xf0][0x8e][0xaa][0xc6][0xba][0x85][0xb7]Y[0x1a]Nu[0xb6][0xc8]fb}[0x17][0xd4][0xcb][0x84][0x11][0xd5][0x17][0xd3]#[0xc1]Eq[0xdc][0x4][0xa3][0x99][0xd3][0xc5][0xdb][0xec][0xb8]{A[0xbe]%;_\[0xe5][0xb8]`[0x8b][0xef][0xa0][0x90]y[0xd2][0xc8][0xf1][0xf0][0xba][0xcd]%[0xf5][0xf2][0xe4].W[0xc2][0x88]r[0x9f]F#[0xc1][0xa5][0xbf]e2_[0xdf][0xbd][0xbc][0xb0][0xbc]U[0x93][0xed]6i#[0xf2][0xc3][0xd5][0xcb][0x8b][0x9b][0xe7]KK[0xfa][0x9][0x8d][0x97][0xdd][0xbb]Y[0xf2]p\[0x5][0x9d][0x1e][0xbd][0xd8][0x9f][0xc3][0xa9]./s[0xf1][0xc9][0xca][0xac]q>NQ[0xf8][0xd3]$[0x9d][0x0]G[0xe9][0xa4]3o[0xa0][\r]5[0xc6]5[0x9a][0xf4][0xff]![0xa4][0x16]g[0x9c]9[0x3][0xa6][0xfb]6![0xc4]"[0xe8]p[0xec][0xb1]8&[0x8a][0xab][0x90]D[0xaa][0x17][0xda][0x14][0x15][0xb3][0x1d][0xde][0x8f]5[0xe][0x98][0xe6][0xb6][0xa6][0x96][0xcd])[0xb7]P[[0x8a][0xea][0xb0]O#b9[0x8a][0xf7][0x89][0xd6][0xf0][0xfc][0x5][0x0][0x0][0xff][0xff][0x3][0x0][0xfc][0xf9]\[0xb3]r[0x1][0x0][0x0]"
+16:10:13.237 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:13.508 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:10:13.508 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:13.508 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:10:13.662 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@77833456
+16:10:13.662 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:10:16.179 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:16.181 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:16.534 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:16.534 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:16.534 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:16.535 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:16.535 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /api/auth/user HTTP/1.1
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "DELETE /api/auth/user HTTP/1.1[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMDk5OWVkMjgwMDAxYjM1NjgzMSIsImlhdCI6MTY5MjUzNjk4NSwiZXhwIjoxNjkyNTM4MTg1fQ.zsQ6bDnV-21v8PAGcmvLIP5miw9Ftdb_wg-VeChE-Lw[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:16.535 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:16.536 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:16.536 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:16.536 [main] DEBUG org.apache.http.headers - >> DELETE /api/auth/user HTTP/1.1
+16:10:16.536 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:16.536 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMDk5OWVkMjgwMDAxYjM1NjgzMSIsImlhdCI6MTY5MjUzNjk4NSwiZXhwIjoxNjkyNTM4MTg1fQ.zsQ6bDnV-21v8PAGcmvLIP5miw9Ftdb_wg-VeChE-Lw
+16:10:16.536 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:16.537 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:16.537 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:16.537 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:16.537 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:16.942 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 202 Accepted[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:09:49 GMT[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Content-Length: 54[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=26yhNuKXbsRj9Y6L0Y40JNsT7gis6mNPjtFsIEHORTIEdQkMTLxQFTVNpvVYpIh6G4lgBuskWDkE7DlQ0GQAowYKhpAki6txUV2Cgjc59sm0ZWmxq%2BDWK26AavBms9qaBve5cMRKSsIdZH2ZIM9C2%2Ff6PsQ%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adf744f8f2c3f-FRA[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:16.943 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 202 Accepted
+16:10:16.943 [main] DEBUG org.apache.http.headers - << HTTP/1.1 202 Accepted
+16:10:16.943 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:09:49 GMT
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Content-Length: 54
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:16.944 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:16.944 [main] DEBUG org.apache.http.headers - << ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+16:10:16.944 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=26yhNuKXbsRj9Y6L0Y40JNsT7gis6mNPjtFsIEHORTIEdQkMTLxQFTVNpvVYpIh6G4lgBuskWDkE7DlQ0GQAowYKhpAki6txUV2Cgjc59sm0ZWmxq%2BDWK26AavBms9qaBve5cMRKSsIdZH2ZIM9C2%2Ff6PsQ%3D"}],"group":"cf-nel","max_age":604800}
+16:10:16.944 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:16.944 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:16.944 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adf744f8f2c3f-FRA
+16:10:16.944 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:16.944 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:16.944 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:16.944 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 23530
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 20, 2023 4:10:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="LogInButtonOnRegistration" classname="org.example.LogInTest" time="7.272">
+    <system-out><![CDATA[16:10:21.557 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:21.557 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:21.930 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:21.930 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:21.930 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:10:21.930 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:21.930 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:21.930 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/auth/register HTTP/1.1
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "POST /api/auth/register HTTP/1.1[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 80[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> POST /api/auth/register HTTP/1.1
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Content-Length: 80
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:21.931 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:21.932 [main] DEBUG org.apache.http.wire -  >> "{"email":"leigh.cummerata@hotmail.com","password":"123456!","name":"Lake Speed"}"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:09:54 GMT[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGEyOWVkMjgwMDAxYjM1NjgzNCIsImlhdCI6MTY5MjUzNjk5NCwiZXhwIjoxNjkyNTM4MTk0fQ.9jh4CkekloTvvLPqAOC9u3z9HGPOTKZBjYI8_dOXhBo[\r][\n]"
+16:10:22.191 [main] DEBUG org.apache.http.wire -  << "ETag: W/"178-bEe6VPcV2FHoMJlYhl9N+09QfTo"[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FyVInZ8Yo0kXvLFeFeY85ZKzqQgZQ%2FAp0eUwWDE1ezwrS241OEwT9VRXIVsR0iFL%2FF4PoD6rzDGfiyo9unPmu6qOAar8iAtY1am739AYSllA3Wv0HA5O2sYh5pObyYr3uISAChVMh%2FYHOWNF4os0fAyj6B4%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adf9609f43636-FRA[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:22.192 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:10:22.192 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:09:54 GMT
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:22.192 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:22.192 [main] DEBUG org.apache.http.headers - << authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGEyOWVkMjgwMDAxYjM1NjgzNCIsImlhdCI6MTY5MjUzNjk5NCwiZXhwIjoxNjkyNTM4MTk0fQ.9jh4CkekloTvvLPqAOC9u3z9HGPOTKZBjYI8_dOXhBo
+16:10:22.192 [main] DEBUG org.apache.http.headers - << ETag: W/"178-bEe6VPcV2FHoMJlYhl9N+09QfTo"
+16:10:22.192 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FyVInZ8Yo0kXvLFeFeY85ZKzqQgZQ%2FAp0eUwWDE1ezwrS241OEwT9VRXIVsR0iFL%2FF4PoD6rzDGfiyo9unPmu6qOAar8iAtY1am739AYSllA3Wv0HA5O2sYh5pObyYr3uISAChVMh%2FYHOWNF4os0fAyj6B4%3D"}],"group":"cf-nel","max_age":604800}
+16:10:22.192 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:22.192 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adf9609f43636-FRA
+16:10:22.192 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+16:10:22.193 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:22.193 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:22.193 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:22.193 [main] DEBUG org.apache.http.wire -  << "14e[\r][\n]"
+16:10:22.193 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]4[0x8f][0xcd]n[0x82]@[0x18][0x0]_[0xc5]|gc[0xf8]se9Uic[0xd7][\n]"
+16:10:22.193 [main] DEBUG org.apache.http.wire -  << "[0xd8][0x16][0xad]xi[0xd6][0xe5][a[0x17][0xc4][0x82][0xa8]h|[0xf7][0xc6]&[0xbd][0xce]$[0x93][0xcc][\r][0x9a]V[0x8]l[0x1a][0xf0][0x8e]u[0x8b]}h[0x1b][0xac][0xc1][0xbb][0x1][0x96]</[0xc0][0x83][0x2][0xf3]]6[0x10]mYb[0xcd][0x8f][0xfc])[0xab][0x8e][0xf]3[0x10]U[0x9]}[0xd8][0xf3][0x12][0xc1][0x83]9[0xd7][0xd8][0xfb]< [0xa6]p[0xef][0x3][0xff][0xb][0xc6][0x95][0xc6]=x0A^c[0xdd][0xc3]n[0x96]m[0xa7]"[0x8f][0xf2][0x19][^[0x99][0x19][0xe6][0xac]a[0xfb][0x8f][0xa1][0xf0][0x19]a[0xfa][0xb0]^[0xf9]3:[0xc0]nv[0xd8]<[0x80]J[0x8c]M[0xcc].[0xc1][0xf4][0xa5][0x8b][0xbe]V:P[0xbb]s[0xf0]<[0xbe]$*0C[0xb5][0xbb][0x86]>kXYd[0xa9][0xcf]H[0x10]'[0xc3]@-[0xaf][0xa1][0xd2][0xc3][0xd0]?[0xe7][0x9b]uvf[0xaa][0xba][0x84]Jwa[0x1c]8A[0xac][\r][0xf9]>[0xa0]*s|[0x8d][0xba][0xa8][0xe2][0xd3]i[0xbe][0xf8][0x19]G>m[0xed]+}[0x9d].[0xa2][0xf8]m3Q[0x9]s[0xbf][0xd3]h[0x9d]M*[0xe8]C[0x8d][0xb2][0xc6]&[0xfb][0xb0][0xa4] ([0x1c][0xcb]t[0xd1]ENF[0xe9][0x88][4M[0xa9][0x8b][0xc2][0xe0][0xdb][0x91]I[0x9]Om[0xcb][0x1a]!1Mi[0x13][0x1b]%7l[0xd3][0xa2][0xb6][0x83][0x96]DC[0xe])[0x12][0xc2][0xa5]t\[0xe1][\n]"
+16:10:22.193 [main] DEBUG org.apache.http.wire -  << "K[0x1a]p[0xff][0x5][0x0][0x0][0xff][0xff][0x3][0x0][0xe1]7j[0xec]x[0x1][0x0][0x0]"
+16:10:22.193 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:22.355 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:10:22.355 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:22.355 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:10:22.356 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7ce0054c
+16:10:22.356 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:10:23.269 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:23.270 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:23.748 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:23.748 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:23.748 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:23.748 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:23.748 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /api/auth/user HTTP/1.1
+16:10:23.748 [main] DEBUG org.apache.http.wire -  >> "DELETE /api/auth/user HTTP/1.1[\r][\n]"
+16:10:23.748 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:23.748 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGEyOWVkMjgwMDAxYjM1NjgzNCIsImlhdCI6MTY5MjUzNjk5NCwiZXhwIjoxNjkyNTM4MTk0fQ.9jh4CkekloTvvLPqAOC9u3z9HGPOTKZBjYI8_dOXhBo[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:23.749 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> DELETE /api/auth/user HTTP/1.1
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGEyOWVkMjgwMDAxYjM1NjgzNCIsImlhdCI6MTY5MjUzNjk5NCwiZXhwIjoxNjkyNTM4MTk0fQ.9jh4CkekloTvvLPqAOC9u3z9HGPOTKZBjYI8_dOXhBo
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:23.750 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 202 Accepted[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:09:56 GMT[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "Content-Length: 54[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:24.509 [main] DEBUG org.apache.http.wire -  << "ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5kb%2B2C13MXrgD4iTk%2FboRw1PMDEYjmPgEj80xNCidIhckg%2BnUaZGbbL4EkFC9HpXgSSbo%2B1XcNjyXp3%2BY3vUQtegPeFRi9iTV9HkbF3Br%2Ba%2B3GUhS5ovNaFOFmojUd8EGUNA%2FRxxFm9VpxGgeDItPvxL94I%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adfa158119b69-FRA[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:24.510 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 202 Accepted
+16:10:24.510 [main] DEBUG org.apache.http.headers - << HTTP/1.1 202 Accepted
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:09:56 GMT
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Content-Length: 54
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:24.510 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:24.510 [main] DEBUG org.apache.http.headers - << ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+16:10:24.510 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5kb%2B2C13MXrgD4iTk%2FboRw1PMDEYjmPgEj80xNCidIhckg%2BnUaZGbbL4EkFC9HpXgSSbo%2B1XcNjyXp3%2BY3vUQtegPeFRi9iTV9HkbF3Br%2Ba%2B3GUhS5ovNaFOFmojUd8EGUNA%2FRxxFm9VpxGgeDItPvxL94I%3D"}],"group":"cf-nel","max_age":604800}
+16:10:24.510 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:24.510 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:24.510 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adfa158119b69-FRA
+16:10:24.510 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:24.510 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:24.510 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:24.510 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 16644
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 20, 2023 4:10:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="LogInButtonOnLkHeader" classname="org.example.LogInTest" time="7.066">
+    <system-out><![CDATA[16:10:24.895 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53442<->172.67.189.31:443 closed
+16:10:24.900 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53407<->172.67.189.31:443 closed
+16:10:24.901 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53444<->172.67.189.31:443 closed
+16:10:28.836 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:28.836 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:29.146 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:29.146 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:29.146 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:10:29.146 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:29.146 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:29.146 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/auth/register HTTP/1.1
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "POST /api/auth/register HTTP/1.1[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 83[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:29.146 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:29.147 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:29.147 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> POST /api/auth/register HTTP/1.1
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Content-Length: 83
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:29.147 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:29.147 [main] DEBUG org.apache.http.wire -  >> "{"email":"isabella.corwin@gmail.com","password":"123456!","name":"Bob Inforapples"}"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:01 GMT[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGE5OWVkMjgwMDAxYjM1NjgzNyIsImlhdCI6MTY5MjUzNzAwMSwiZXhwIjoxNjkyNTM4MjAxfQ.83TDYyD-ySeWqy7p8B6xtQ0rCc5F5u0mJfP9eXTezLc[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "ETag: W/"17b-mDNWtA5TCx+/4WbetFvNHIuC9Tk"[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TmwCfIDDAAOaaClHYeSVgV9T4ckKx9qUoq7CXa0eRzc90pFFHxWvtBiuHR6UghVr5PWZtEYCCxOtYNJ%2BloDDZM494FLwp8gpq4gjkDZQstAYLf3cTr%2BoicPpaEykj3XRhoGR9GtyPyhxJYzFRBzRtfgKA98%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adfc31e476916-FRA[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:29.403 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:10:29.403 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:01 GMT
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:29.403 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:29.403 [main] DEBUG org.apache.http.headers - << authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGE5OWVkMjgwMDAxYjM1NjgzNyIsImlhdCI6MTY5MjUzNzAwMSwiZXhwIjoxNjkyNTM4MjAxfQ.83TDYyD-ySeWqy7p8B6xtQ0rCc5F5u0mJfP9eXTezLc
+16:10:29.403 [main] DEBUG org.apache.http.headers - << ETag: W/"17b-mDNWtA5TCx+/4WbetFvNHIuC9Tk"
+16:10:29.403 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TmwCfIDDAAOaaClHYeSVgV9T4ckKx9qUoq7CXa0eRzc90pFFHxWvtBiuHR6UghVr5PWZtEYCCxOtYNJ%2BloDDZM494FLwp8gpq4gjkDZQstAYLf3cTr%2BoicPpaEykj3XRhoGR9GtyPyhxJYzFRBzRtfgKA98%3D"}],"group":"cf-nel","max_age":604800}
+16:10:29.403 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:29.403 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:29.404 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adfc31e476916-FRA
+16:10:29.404 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+16:10:29.404 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:29.404 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:29.404 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:29.404 [main] DEBUG org.apache.http.wire -  << "14e[\r][\n]"
+16:10:29.404 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]4[0x8f][0xc9]n[0xc2]0[0x14][0x0][0xa5][0xf2][0x99]";[0xab][0x9d]SYZ[0xe4][0xa8][0xe][0xa5][0x84][0xf5]f[0xcc][0xb]$d[0xab][\r][0xca][0x82][0xf8][0xf7][0x8a]J[0xbd][0x8e]F#[0xcd][0x1d][0x99][0x9b]R`[0xc][\n]"
+16:10:29.404 [main] DEBUG org.apache.http.wire -  << "[0xae][0xfa][0x6][0x3]t3[0xa0]QpGP[0xc8]4G[0x1]J[0x8d]<@[0x9e][0xcb][0xa1][0xaa]t[0x93][0x96]o[0xa7]'[0x1f][0xaa][0xaa]@[0x3]T[0xca][0x2]P[0x80][0xc6][0xd5][0xe1][0x85][0x97]I[0xa5]e][0xe7]`[0xd0]c[0x80][0xe4]_3[0xae].P>[0x5][0x90][0x1a][0xf4][0xb]t[0xe1][0xf9]0S[0xe9]<[\r][0xf9][0xaa][0xe7]$J[0xb9][0xe1][0xe5][0xb7][0xab]&[0xdc][0xe3][0x97]z[0xbb][0x9e][0x84]l[0x8]]X[0xef][0x9f] [0xdb][0xe1]}[0xcc][1{w[0xe7][0x9b][0xf5]Ed[0xa7]FLG[0xed].[0x13]$[0xca]N}[0xd4]q[0xc3][0x8b][0xfc]|[0x9c]pO[0xc4];Wd[0xab]>[0xea]G[0x8d]X6[0xe9]~{nxV[0xb5]Qv[0xe9][0xa2]X8"[0x1b][0xb5][0xc9]bH[0xed]x[0xba][0xeb][0xa6][0xaf][0xdd][0x12]6?[0x9d]_[0xd3][0xb1][0xd7]^[0x17]XO[0x94][0xfb][0xe1][0xde]p[0x11]&_[0xc][0xb6]1[0xf4][0x9f][\n]"
+16:10:29.404 [main] DEBUG org.apache.http.wire -  << "[\r][0x90][0x86]D[0x83]9[0xff]?[0xb8][0x98][0x82][0xa4][0x8e][0x8b]m[0xdf][0x2][0xcc][0xa4][0xc3][0x8e]>P[0x8b]2[0x1f],[0xa2]<[0xcb]c[0x94]*[0x87]X[0x9e][0xb2]|[0xea][[0xec]`[0xb9]>[0xb1][0x1d][0x82][0x13][0x95]`[0xc9][0x8e][0x89][\r]6[0x3]Il[0xe2][0x11][0x1b][0xfb][0x80][0x1e][0xbf][0x0][0x0][0x0][0xff][0xff][0x3][0x0][0xf8][0xbf][0xa7][0x83]{[0x1][0x0][0x0]"
+16:10:29.404 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:29.406 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:10:29.406 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:29.406 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:10:29.407 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@37e0c4db
+16:10:29.407 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:10:30.426 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:30.427 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:30.806 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:30.806 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:30.806 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:30.806 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:30.806 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /api/auth/user HTTP/1.1
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "DELETE /api/auth/user HTTP/1.1[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGE5OWVkMjgwMDAxYjM1NjgzNyIsImlhdCI6MTY5MjUzNzAwMSwiZXhwIjoxNjkyNTM4MjAxfQ.83TDYyD-ySeWqy7p8B6xtQ0rCc5F5u0mJfP9eXTezLc[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:30.806 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:30.807 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> DELETE /api/auth/user HTTP/1.1
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGE5OWVkMjgwMDAxYjM1NjgzNyIsImlhdCI6MTY5MjUzNzAwMSwiZXhwIjoxNjkyNTM4MjAxfQ.83TDYyD-ySeWqy7p8B6xtQ0rCc5F5u0mJfP9eXTezLc
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:30.807 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:31.507 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 202 Accepted[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:03 GMT[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Content-Length: 54[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=68cFYMe%2Fds8Vwil3bMDMMCNqrmS5hAi3wjg49%2B4%2FTGfnTVE7rOGADGj62Gek96wChW2Sw4%2FblNsNiNSJyLFotHNkaQNWU1sev3WWo8Jty7m93jsSF6KXhnAPmmNgKzuhlC9IHENxDkV8j1ar6FqaGXazuUk%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adfcd6df58fce-FRA[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:31.508 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 202 Accepted
+16:10:31.508 [main] DEBUG org.apache.http.headers - << HTTP/1.1 202 Accepted
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:03 GMT
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Content-Length: 54
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:31.508 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:31.508 [main] DEBUG org.apache.http.headers - << ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+16:10:31.508 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=68cFYMe%2Fds8Vwil3bMDMMCNqrmS5hAi3wjg49%2B4%2FTGfnTVE7rOGADGj62Gek96wChW2Sw4%2FblNsNiNSJyLFotHNkaQNWU1sev3WWo8Jty7m93jsSF6KXhnAPmmNgKzuhlC9IHENxDkV8j1ar6FqaGXazuUk%3D"}],"group":"cf-nel","max_age":604800}
+16:10:31.508 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:31.508 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:31.508 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adfcd6df58fce-FRA
+16:10:31.508 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:31.508 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:31.509 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:31.509 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 19990
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 20, 2023 4:10:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="jumpFromLkToConstructorAuthorizationUser" classname="org.example.LogInTest" time="8">
+    <system-out><![CDATA[16:10:31.934 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53468<->172.67.189.31:443 closed
+16:10:31.936 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53470<->172.67.189.31:443 closed
+16:10:32.044 [Finalizer] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection 0.0.0.0:53404<->172.67.189.31:443 closed
+16:10:35.743 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:35.744 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:36.009 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:36.009 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:36.009 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:10:36.009 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:36.009 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:36.009 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/auth/register HTTP/1.1
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "POST /api/auth/register HTTP/1.1[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 74[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> POST /api/auth/register HTTP/1.1
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Content-Length: 74
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:36.009 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:36.010 [main] DEBUG org.apache.http.wire -  >> "{"email":"noah.harvey@yahoo.com","password":"123456!","name":"Skip Stone"}"
+16:10:36.265 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:08 GMT[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:36.266 [main] DEBUG org.apache.http.wire -  << "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGIwOWVkMjgwMDAxYjM1NjgzYSIsImlhdCI6MTY5MjUzNzAwOCwiZXhwIjoxNjkyNTM4MjA4fQ.HJ5M23-1Iw3DkuNpEeQFOPr-ugMXzlh_NacV9RGzIpo[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "ETag: W/"172-3ZnVEtU7dWv5biJ1jhFgjYNKtI8"[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nUJDco8dGyt1Ppzqk5oPHmRWUUcRCJAvzwspIYpuVcUcxeZthpVa13ZaZ2eQZ6AhhBYbRNR1VS3hmvkSF6dvv02jbC7uBpHepjgn%2BsccM7i1ro6OA91RkRgEgK9ZiXqNPEDcZMWosyqwmvFAYnLbB2%2B1S8c%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adfede8962c3b-FRA[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:36.267 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:10:36.267 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:08 GMT
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:36.267 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:36.267 [main] DEBUG org.apache.http.headers - << authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGIwOWVkMjgwMDAxYjM1NjgzYSIsImlhdCI6MTY5MjUzNzAwOCwiZXhwIjoxNjkyNTM4MjA4fQ.HJ5M23-1Iw3DkuNpEeQFOPr-ugMXzlh_NacV9RGzIpo
+16:10:36.267 [main] DEBUG org.apache.http.headers - << ETag: W/"172-3ZnVEtU7dWv5biJ1jhFgjYNKtI8"
+16:10:36.267 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nUJDco8dGyt1Ppzqk5oPHmRWUUcRCJAvzwspIYpuVcUcxeZthpVa13ZaZ2eQZ6AhhBYbRNR1VS3hmvkSF6dvv02jbC7uBpHepjgn%2BsccM7i1ro6OA91RkRgEgK9ZiXqNPEDcZMWosyqwmvFAYnLbB2%2B1S8c%3D"}],"group":"cf-nel","max_age":604800}
+16:10:36.267 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:36.267 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adfede8962c3b-FRA
+16:10:36.267 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+16:10:36.267 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:36.268 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:36.268 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:36.268 [main] DEBUG org.apache.http.wire -  << "14a[\r][\n]"
+16:10:36.268 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]4[0x8f][0xcb]n[0x82]@[0x14]@[0xc5][0xdc][0xb5][0x12][0x10][0x6][0x84]U-[0xb6]vH[0x6][0xea][0xb3][0xe2][0xa6][0x99][0x19]/[0xf2][0x90]G@[0x8a]`[0xfc][0xf7][0xc6]&[0xdd][0x9c][0xc5]Y[0x9c][0xe4][0xdc][0xa1]i[0xa5][0xc4][0xa6][0x1][0xe7]Z[0xb7]8[0x86][0xb6][0xc1][0x1a][0x9c];`[0xce][0x93][0xb]8P[0x94]<Vb^[0xff]`[0xff][0xd2][0xf3][0xb8],[0x15]Y[0xe6]0[0x86][0x82][0xe7][0x8][0xe]l[0xb2][0xa4][0x1a]m[0xae]e[0x81][0xf0][0x18][0x3][0xff]Km[0xcb][0xc][0xb]p[0xe0][0x15]y[0x8d][0xf5][0x8]{/[0x16]K[0x99][0x4][0x89]Gw[0x3][0xd5][0xfc][0x84]6[0xb4]X[0x13][0xe9]R[0x93]f[0xd5]a[0xef]z[0xb6][0x82][0xbd]W[0x1d][0x9f]"[\r][0xd5][0xe3][0x96][0xde][0xd8][0x92]v[0xc1][0xd7]>c[0xe9][0xb9]c[0x8b][0xf9]-L[0x99][0xe6][0xa7][0xe7]![0xdc][0xd0][0x86][0xe6][0x97][0xf8][0xe4]R[0x93]mC[0xc2][0xd2][0xdd][0xe0][0xf][0xf3].p[0xbb][0xe4]x[0x88];[0x9a][0x96]7?[0xcd]z[0xcb][0xc][0x96][0xce][0x8d]h[0xa5]|x[0x84]M[0xf5][0x89]F;}[0x91][0xb5]~[0xf5][0x86][0xab][0xf7][0xe0][0xb3][0x9e][0xb4]gv[0x18].[0xf1][0xb7][0xcf][0xe5][0xde]^/[0x7]Z[0x95]0[0x86][0x1a][0xa3][0x1a][0x9b][0xf8][0xff]A[0xe8]D[0xaa]R[0x95][0x1a][0x91]8#[0x92][0x9b][0x91][0xb4]f[0xe6][0x93][0x6][0xaa]RD:![0xb6]5[0xd3]"bL[0x5][0xaa][0xd1][0x94][0xa8][0xd1]I[0x8][0xcb]F[0xd5][0x10]:[0x9e]L[0x1b][0x9][0x97][0x96][0x9c][0xa2][0x14][0x86][0xe0]:[0xc2][0xe3][0x17][0x0][0x0][0xff][0xff][0x3][0x0][0xec][0x89]U[0xe8]r[0x1][0x0][0x0]"
+16:10:36.268 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:36.342 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:10:36.342 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:36.342 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:10:36.343 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5a22fc6e
+16:10:36.343 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:10:38.500 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:38.500 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:38.842 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:38.842 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:38.842 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:38.843 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:38.843 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /api/auth/user HTTP/1.1
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "DELETE /api/auth/user HTTP/1.1[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGIwOWVkMjgwMDAxYjM1NjgzYSIsImlhdCI6MTY5MjUzNzAwOCwiZXhwIjoxNjkyNTM4MjA4fQ.HJ5M23-1Iw3DkuNpEeQFOPr-ugMXzlh_NacV9RGzIpo[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> DELETE /api/auth/user HTTP/1.1
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGIwOWVkMjgwMDAxYjM1NjgzYSIsImlhdCI6MTY5MjUzNzAwOCwiZXhwIjoxNjkyNTM4MjA4fQ.HJ5M23-1Iw3DkuNpEeQFOPr-ugMXzlh_NacV9RGzIpo
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:38.843 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:39.539 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 202 Accepted[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:11 GMT[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Content-Length: 54[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=88zGmEuc6UArKhKB%2FKia%2BuVLqLipiGztE5wzBZCKE2M7xEUJptrfxD9wMlp7ZIVrN6PuzMqsnB%2Fvf47qg%2FO8cEUMdOj5lpRz9Qy%2FXoq%2B03wi%2FHRqo4Ra0oXnfTwdSWk2Wx8PHOtYYSqraNTpTfQTwuTkRKI%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9adfffbfc04d59-FRA[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:39.540 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 202 Accepted
+16:10:39.540 [main] DEBUG org.apache.http.headers - << HTTP/1.1 202 Accepted
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:11 GMT
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Content-Length: 54
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:39.540 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:39.540 [main] DEBUG org.apache.http.headers - << ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+16:10:39.540 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=88zGmEuc6UArKhKB%2FKia%2BuVLqLipiGztE5wzBZCKE2M7xEUJptrfxD9wMlp7ZIVrN6PuzMqsnB%2Fvf47qg%2FO8cEUMdOj5lpRz9Qy%2FXoq%2B03wi%2FHRqo4Ra0oXnfTwdSWk2Wx8PHOtYYSqraNTpTfQTwuTkRKI%3D"}],"group":"cf-nel","max_age":604800}
+16:10:39.540 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:39.540 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:39.540 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9adfffbfc04d59-FRA
+16:10:39.540 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:39.541 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:39.541 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:39.541 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 44634
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 20, 2023 4:10:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="LogInButtonOnForgotPage" classname="org.example.LogInTest" time="7.787">
+    <system-out><![CDATA[16:10:43.809 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:43.810 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:44.178 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:44.179 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:44.179 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:10:44.179 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:44.179 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:44.179 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/auth/register HTTP/1.1
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "POST /api/auth/register HTTP/1.1[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 76[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:44.179 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> POST /api/auth/register HTTP/1.1
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Content-Length: 76
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:44.180 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:44.180 [main] DEBUG org.apache.http.wire -  >> "{"email":"edith.hegmann@yahoo.com","password":"123456!","name":"Moe Skeeto"}"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:16 GMT[\r][\n]"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:44.451 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGI4OWVkMjgwMDAxYjM1NjgzZCIsImlhdCI6MTY5MjUzNzAxNiwiZXhwIjoxNjkyNTM4MjE2fQ.hn0EzoJeucOxGsmNfHkfll_gEeafX6-00mrTMr2o5rE[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "ETag: W/"174-FHebhJ0Gwbl15NpWEmVz53Dh8yo"[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EfkcsRD1SkRjMKDkWQELOKTX832TUwXkiEZ0sp1wBebPzwE1flaAGQqQ2vK96LhWu46Oxf1Sfm%2BZmIFfyGL6s1rzWZ%2Fl1hW56GSMbNmnQoUE6Mb8nu%2FopaGQyRkheQNFOGkOqP1uamSLjXoqN2y6wclhX3c%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9ae0210a459b22-FRA[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:44.452 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:10:44.452 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:16 GMT
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:44.452 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:44.452 [main] DEBUG org.apache.http.headers - << authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGI4OWVkMjgwMDAxYjM1NjgzZCIsImlhdCI6MTY5MjUzNzAxNiwiZXhwIjoxNjkyNTM4MjE2fQ.hn0EzoJeucOxGsmNfHkfll_gEeafX6-00mrTMr2o5rE
+16:10:44.452 [main] DEBUG org.apache.http.headers - << ETag: W/"174-FHebhJ0Gwbl15NpWEmVz53Dh8yo"
+16:10:44.452 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EfkcsRD1SkRjMKDkWQELOKTX832TUwXkiEZ0sp1wBebPzwE1flaAGQqQ2vK96LhWu46Oxf1Sfm%2BZmIFfyGL6s1rzWZ%2Fl1hW56GSMbNmnQoUE6Mb8nu%2FopaGQyRkheQNFOGkOqP1uamSLjXoqN2y6wclhX3c%3D"}],"group":"cf-nel","max_age":604800}
+16:10:44.452 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:44.452 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9ae0210a459b22-FRA
+16:10:44.452 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+16:10:44.452 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:44.452 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:44.453 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:44.453 [main] DEBUG org.apache.http.wire -  << "14b[\r][\n]"
+16:10:44.453 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]4[0xcf][k[0xc2]0[0x18][0x80][0xe1][0xbf]"[0xdf][0xb5]+MO[0xc6]^[0xcd]u[0xe2]RHe[u[0xea][0xcd]H[0xe2][0x17]{[0xb0][0x8d][0xa4][0x8a][0xb5][0xe2][0x1f][0x1b][0xec][0xf6][0xbd]x[0xe0][0xbd]CwQ[\n]"
+16:10:44.453 [main] DEBUG org.apache.http.wire -  << "[0xbb][0xe][0xe2][0xb3][0xbd][0xe0][0x18].[0x1d]Z[0x88][0xef][0x80][0x8d]([0x8f][0x10][0x3][0xee][0xcb]s[0xe1][0x14]xhD[0xdb]>[0xdf]Da[0x8c][0xa3]L[0x3]chE[0x83][0x10][0x3]78[0xfa][0xac][0x11][0xcf][0x6][0x1e]c[0x10]Xnjl![0x86][0x17][0x14][0x16][0xed][0x8]oi![0x17][0xaa]\[0x96])[[\r][0x8c]d%[0xeb]X[0xfb][0x11][0xaa][0x84]E[0xac]>m[0xd6]I:u[0xf0][0x96][0x9e]v[0xbf][0xa1][0xda][0xba][0xbb][0x9c][0xf5]|[0xc1][0x82][0xe5][0xd7][0xba][0xe6][0xd5][0xe1][0xca]_g[0xfd][0xb6][0xe2]$[0xab][0xe][0xc3].a[0x1d]k[0x8e][0xc5]>a[0x11][0xcf][0xb7]![0xaf]VC6[0xcc][0xfa][0xac][0xbc][0x96][0xbb]Mqe[0x95][0xe9][0xb3][0xaa][0xbe]e9[0xf]x5[0xf7][0xf4][0xbb]S[0xb4][0xee]|0)^[0xd4][0xb2]_tM[0xa6][0xdf]j}<~[0x1f][0xe6]([0xf4]&zr[0xdd][0xc6][0xe6][0xdc]z&[0xb4]s[0x18][0x83]Em[0xb1]+[0xfe][0x1f]h[0x80][0xae]&[0x11][\r][0xb4]D[0xa4][0x2][0x89][0x8]<"%[0x91][0xb8]W[0xfb][0x88][\n]"
+16:10:44.453 [main] DEBUG org.apache.http.wire -  << "*D[0xe0]J*'[0x11][0xf1]C[0xa5]<[0xd7][0xf7][0x3]"[0x89][0x90][0xbe]K[0x15][\r]'[0xc4]G[0x8f]N[0xb5]G[0x85][0x92]Z[0x12][0xf][0x1e]?[0x0][0x0][0x0][0xff][0xff][0x3][0x0]@[0xf4][0xbe][0x1c]t[0x1][0x0][0x0]"
+16:10:44.453 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:44.943 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:10:44.943 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:44.943 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:10:44.945 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@484eb628
+16:10:44.945 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:10:45.818 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://stellarburgers.nomoreparties.site:443
+16:10:45.818 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to stellarburgers.nomoreparties.site:443
+16:10:46.220 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:10:46.222 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:10:46.222 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:10:46.222 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:10:46.222 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: DELETE /api/auth/user HTTP/1.1
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "DELETE /api/auth/user HTTP/1.1[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGI4OWVkMjgwMDAxYjM1NjgzZCIsImlhdCI6MTY5MjUzNzAxNiwiZXhwIjoxNjkyNTM4MjE2fQ.hn0EzoJeucOxGsmNfHkfll_gEeafX6-00mrTMr2o5rE[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Host: stellarburgers.nomoreparties.site[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> DELETE /api/auth/user HTTP/1.1
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTIxMGI4OWVkMjgwMDAxYjM1NjgzZCIsImlhdCI6MTY5MjUzNzAxNiwiZXhwIjoxNjkyNTM4MjE2fQ.hn0EzoJeucOxGsmNfHkfll_gEeafX6-00mrTMr2o5rE
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Accept: */*
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Host: stellarburgers.nomoreparties.site
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+16:10:46.222 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:10:47.317 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 202 Accepted[\r][\n]"
+16:10:47.317 [main] DEBUG org.apache.http.wire -  << "Date: Sun, 20 Aug 2023 13:10:18 GMT[\r][\n]"
+16:10:47.317 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "Content-Length: 54[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=q5UaGS3DqS0cMxFvI61xKpFVc%2F%2FfE0hJZPptC1WGo6mz33Ig1IMsuWS45iBgACI%2BXcyPTzKxvZve%2FG6vjwWVRIN1lhVsyHbLJkgT8b8y5GPrez%2BmiyYYhYBtDhQSyvFuOiqzfK9sfDbmPhaYUGDUethobBU%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 7f9ae02dcc194d38-FRA[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:10:47.318 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 202 Accepted
+16:10:47.318 [main] DEBUG org.apache.http.headers - << HTTP/1.1 202 Accepted
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Date: Sun, 20 Aug 2023 13:10:18 GMT
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Content-Length: 54
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+16:10:47.318 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:10:47.318 [main] DEBUG org.apache.http.headers - << ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
+16:10:47.318 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: DYNAMIC
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=q5UaGS3DqS0cMxFvI61xKpFVc%2F%2FfE0hJZPptC1WGo6mz33Ig1IMsuWS45iBgACI%2BXcyPTzKxvZve%2FG6vjwWVRIN1lhVsyHbLJkgT8b8y5GPrez%2BmiyYYhYBtDhQSyvFuOiqzfK9sfDbmPhaYUGDUethobBU%3D"}],"group":"cf-nel","max_age":604800}
+16:10:47.318 [main] DEBUG org.apache.http.headers - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+16:10:47.318 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+16:10:47.318 [main] DEBUG org.apache.http.headers - << CF-RAY: 7f9ae02dcc194d38-FRA
+16:10:47.318 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+16:10:47.318 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:10:47.319 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+16:10:47.319 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 39650
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+авг. 20, 2023 4:10:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

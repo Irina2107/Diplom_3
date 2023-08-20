@@ -1,0 +1,10 @@
+org\example\page_object\ForgotPage.class
+org\example\user_config\BaseClient.class
+org\example\page_object\MainPage.class
+org\example\page_object\AccountProfilePage.class
+org\example\page_object\LogInPage.class
+org\example\page_object\RegisterPage.class
+org\example\user_config\User.class
+org\example\user_config\UserClient.class
+org\example\config\Client.class
+org\example\user_config\Login.class

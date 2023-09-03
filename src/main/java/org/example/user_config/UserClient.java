@@ -25,7 +25,6 @@ public class UserClient extends Client {
                 .then();
 
     }
-
     public ValidatableResponse delete(String token) {
         return given()
                 .spec(getSpec())
@@ -35,42 +34,6 @@ public class UserClient extends Client {
                 .then();
 
     }
-    /*
-    public String getToken(User user) {
-        String accessToken = "";
-        ValidatableResponse response = given()
-                .header("Content-type", "application/json")
-                .body(user)
-                .when()
-                .post(LOGIN)
-                .then();
-                accessToken = response.extract().path("accessToken");
-                return accessToken;
-    }
-
-    public void deleteUser(String accessToken){
-        String token = getToken(new User(name, email, password));
-        given()
-                .header("Content-type", "application/json")
-                .header("Authorization", accessToken)
-                .when()
-                .delete(DELETE)
-                .then();
-    }
-
-
-
-  /*  public void deleteUser(String accessToken){
-        given()
-                .header("Authorization", accessToken)
-                .when()
-                .delete(DELETE)
-                .then();
-
-    }
-
-
-     */
 
 }
 

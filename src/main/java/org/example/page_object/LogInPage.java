@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LogInPage {
     WebDriver driver;
-
     public LogInPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -23,13 +22,11 @@ public class LogInPage {
         new WebDriverWait(driver, 5);
         driver.findElement(fieldEmail).sendKeys(email);
     }
-
     @Step("Заполить поле 'Пароль'")
     public void fillPassword(String password){
         new WebDriverWait(driver, 5);
         driver.findElement(fieldPassword).sendKeys(password);
     }
-
     @Step("Нажать на кнопку 'Войти'")
     public void logInClickOnLoginPage(){
         driver.findElement(logInButton).click();

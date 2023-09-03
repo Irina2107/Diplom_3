@@ -28,38 +28,31 @@ public class RegisterPage extends Client {
 
     @Step("Открыть форму регистрации")
     public void registerButtonOnMainPageOpen(){
-    driver.findElement(registerLinkOnLogInPage).click();}
-
+    driver.findElement(registerLinkOnLogInPage).click();
+    }
     @Step("Заполить поле 'Имя'")
     public void fillName(String name){
-
     driver.findElement(nameInput).sendKeys(name);
     }
-
-
     @Step("Заполить поле 'Email'")
     public void fillEmail(String email){
     new WebDriverWait(driver, 5);
     driver.findElement(emailInput).sendKeys(email);
     }
-
     @Step("Заполить поле 'Пароль'")
     public void fillPassword(String password){
     new WebDriverWait(driver, 5);
     driver.findElement(passwordInput).sendKeys(password);
     }
-
    @Step("Нажать на кнопку 'Зарегистрироваться'")
     public void  registrationButtonOnRegisterPageClick(){
     new WebDriverWait(driver, 10);
     driver.findElement(registrationButtonOnRegisterPage).click();
     }
-
     @Step("Проверить, что отображается кнопка 'Зарегистрироваться'")
     public Boolean registrationButtonNotShown() {
         return driver.findElement(registrationButtonOnRegisterPage).isDisplayed();
     }
-
     @Step("Некорректный пароль")
     public void verifyErrorRegisterWithIncorrectPassword(){
         new WebDriverWait(driver, 5);

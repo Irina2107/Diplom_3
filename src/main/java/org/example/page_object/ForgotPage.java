@@ -7,7 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ForgotPage {
     WebDriver driver;
-
     private By logInButtonOnForgotPage = By.xpath(".//a[text()='Войти']");
     public ForgotPage(WebDriver driver) {
         this.driver = driver;

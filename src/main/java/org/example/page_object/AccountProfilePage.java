@@ -21,7 +21,6 @@ public class AccountProfilePage {
         new WebDriverWait(driver, 5);
         driver.findElement(logOutButton).click();
         }
-
     @Step("Проверить, что отображается кнопка 'Выход'")
     public Boolean checkLogOutIsVisible(){
         new WebDriverWait(driver, 5)

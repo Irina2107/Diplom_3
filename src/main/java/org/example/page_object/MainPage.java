@@ -6,9 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import static org.example.config.Client.MAIN_URL;
-
 
 public class MainPage {
     WebDriver driver;
@@ -52,11 +50,7 @@ public class MainPage {
     @Step("Перейти к секции 'Булки'")
     //Проскролить  до секции 'Булки'
     public MainPage clickBunSection(){
-    //    ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",driver.findElement(bunSection));
-    //Подождать
-      //  new WebDriverWait(driver, 5)
-        //        .until(ExpectedConditions.visibilityOfElementLocated(bunSection));
-        driver.findElement(bunSection).click();
+    driver.findElement(bunSection).click();
     return this;}
 
     @Step("Проверить, что подчеркнута секция 'Булки'")
@@ -77,12 +71,9 @@ public class MainPage {
     public Boolean sauceSectionIsVisible(){
         return driver.findElement(sauceSection).isDisplayed();
     }
-@Step("Перейти к секции 'Начинки'")
-   public MainPage clickFillingSection() {
+    @Step("Перейти к секции 'Начинки'")
+    public MainPage clickFillingSection() {
     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(fillingSection));
-    //Подождать
-   // new WebDriverWait(driver, 5)
-     //       .until(ExpectedConditions.visibilityOfElementLocated(fillingSection));
     driver.findElement(fillingSection).click();
     return this;
 }
